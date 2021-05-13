@@ -1,11 +1,11 @@
 ﻿# Setting up Directory Structure
 
-New-Item  DockerFile -ItemType File
+New-Item  Dockerfile -ItemType File
 New-Item .devcontainer -ItemType Directory
 New-Item  -Path ./.devcontainer/devcontainer.json -ItemType File
 
 # Setting up the content
-Set-Content DockerFile @"
+Set-Content Dockerfile @"
 FROM gk487/cpp-base-image:slim
 "@
 
