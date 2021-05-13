@@ -1,6 +1,6 @@
 # cpp_init
 
-cpp_init is a powershell script for initializing the vs-code based C++ container,
+cpp_init is a powershell script for initializing the vs-code based C++ container.
 
 # Reason for this script
 
@@ -16,6 +16,7 @@ Creating this structure within vscode was quite time consuming hence this powers
 # What does this generate
 
 
+![2021-05-13](https://user-images.githubusercontent.com/56198900/118090749-8bd8f180-b3e7-11eb-99bd-a17334560d85.png)
 
 
 As you can see in the image running this powershell script generates a DockerFile that uses my cppbaseimage (slim version) that contains all the basic tools required for C++ Project development.
@@ -48,6 +49,7 @@ The alternative to this is creating an alias command in your [Powershell Profile
 $ps_script_dir= "C:\Users\krish\OneDrive\lab\scripts"
 New-Alias cpp_init $ps_script_dir\cpp_init.ps1
 ```
+
 
 Now when you type in cpp_init in the working directory the files are automatically generated for you
 
